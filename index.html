@@ -1,21 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="auto">
 <head>
-   <link rel="icon" href="https://assets.thehtmlproject.com/icon.jpeg">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redirecting - The HTML Project</title>
- 
-  <link rel="stylesheet" href="https://discord.thehtmlproject.com/assets/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Redirecting</title>
+    <meta name="description" content="This is a redirect page. Please wait to get redirected..." />
+    <link rel="icon" href="https://assets.thehtmlproject.com/icon.jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward,open_in_new" rel="stylesheet" />
+    <script defer src="https://assets.thehtmlproject.com/script/analytics/script.js" data-ga-id="G-4VCCFETV10"></script>
+    <script defer src="https://assets.thehtmlproject.com/script/theme.js"></script>
+    <meta name="color-scheme" content="light dark" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <noscript>
+        <meta http-equiv="refresh" content="5;url=https://discord.gg/DDkrC9brCM" />
+    </noscript>
+    <link rel="stylesheet" href="redirect.css" />
 </head>
 <body>
-  <div class="container">
-    <svg class="logo-anim spin" viewBox="0 0 512 512">
-      <path class="dash" d="M105 256l80-80M105 256l80 80M407 256l-80-80M407 256l-80 80M222 420 L290 92"/>
-    </svg>
-    <button id="fallback" onclick="window.location.href = redirectURL">Click here to get redirected</button>
-  </div>
-  <script src="https://discord.thehtmlproject.com/assets/script.js" defer></script>
+
+    <div class="circle-reveal" aria-hidden="true"></div>
+
+
+
+    <main class="redirect-container" role="main">
+
+        <div class="redirect-icon">
+            <span class="material-symbols-outlined">open_in_new</span>
+        </div>
+
+        <h1 class="redirect-title">Thanks for visiting!</h1>
+
+        <p class="redirect-subtitle">
+            You'll be redirected in just a moment.
+        </p>
+
+        <a href="https://discord.gg/DDkrC9brCM" id="redirect-cta" class="redirect-cta" rel="noopener noreferrer">
+            <span class="redirect-cta-fill" id="cta-fill"></span>
+            <span class="btn-text">Launch Discord</span>
+            <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+        </a>
+
+    </main>
+
+    <script src="redirect.js" defer></script>
 </body>
 </html>
